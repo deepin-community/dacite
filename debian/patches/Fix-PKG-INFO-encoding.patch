@@ -1,0 +1,18 @@
+Description: Fix encoding of PKG-INFO file
+ Reproducible test fails if the file is encoded differently
+ depending on the current locale settings.
+Author: Valentin Vidic <vvidic@debian.org>
+Last-Update: 2020-04-11
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/setup.py
++++ b/setup.py
+@@ -4,7 +4,7 @@
+     name="dacite",
+     version="1.8.1",
+     description="Simple creation of data classes from dictionaries.",
+-    long_description=open("README.md").read(),
++    long_description=open("README.md", encoding="utf-8").read(),
+     long_description_content_type="text/markdown",
+     author="Konrad Hałas",
+     author_email="halas.konrad@gmail.com",

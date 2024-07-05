@@ -1,5 +1,91 @@
-template-repository (1.0-1) unstable; urgency=medium
+dacite (1.8.1-2) unstable; urgency=medium
 
-  * Initial release
+  [ Chris Lamb ]
+  * Make the build reproducible (Closes: #1053353)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Valentin Vidic <vvidic@debian.org>  Sun, 26 Nov 2023 00:43:19 +0100
+
+dacite (1.8.1-1) unstable; urgency=medium
+
+  * New upstream version 1.8.1
+  * Update patches for new version
+  * Remove benchmark.json file after the build
+
+ -- Valentin Vidic <vvidic@debian.org>  Sat, 24 Jun 2023 00:48:14 +0200
+
+dacite (1.8.0-1) unstable; urgency=medium
+
+  * New upstream version 1.8.0
+  * Update patches for new version
+  * Add python3-pytest-benchmark dependency
+
+ -- Valentin Vidic <vvidic@debian.org>  Thu, 09 Feb 2023 00:37:08 +0100
+
+dacite (1.7.0-1) unstable; urgency=medium
+
+  * New upstream version 1.7.0 (Closes: #1026748)
+  * Update patches for new version
+  * Update Standards-Version to 4.6.2
+  * Update debian copyright year
+
+ -- Valentin Vidic <vvidic@debian.org>  Mon, 26 Dec 2022 00:26:25 +0100
+
+dacite (1.6.0-2) unstable; urgency=medium
+
+  * d/watch: update github url
+  * d/control: update Standards-Version to 4.6.0
+  * d/tests: skip test failing with python 3.10
+  * d/copyright: update year for debian/*
+
+ -- Valentin Vidic <vvidic@debian.org>  Sat, 20 Nov 2021 10:20:22 +0100
+
+dacite (1.6.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Valentin Vidic ]
+  * New upstream version 1.6.0
+  * Update Standards-Version to 4.5.1
+  * Update patches for new version
+  * Update watch file version to 4
+
+ -- Valentin Vidic <vvidic@debian.org>  Fri, 04 Dec 2020 17:32:32 +0100
+
+dacite (1.5.1-1) unstable; urgency=medium
+
+  * New upstream version 1.5.1
+  * Refresh patches for new version
+  * Use debhelper v13
+
+ -- Valentin Vidic <vvidic@debian.org>  Sat, 11 Jul 2020 10:46:39 +0200
+
+dacite (1.5.0-1) unstable; urgency=medium
+
+  * New upstream version 1.5.0
+  * Refresh patches
+  * Add simple autopkgtest
+
+ -- Valentin Vidic <vvidic@debian.org>  Fri, 08 May 2020 21:39:50 +0200
+
+dacite (1.4.0-1) unstable; urgency=medium
+
+  * Fix encoding of PKG-INFO file
+  * Fix dpkg-gencontrol warnings for undefined vars
+  * New upstream version 1.4.0
+  * Refresh patches for new version
+
+ -- Valentin Vidic <vvidic@debian.org>  Sun, 19 Apr 2020 09:31:20 +0200
+
+dacite (1.3.0-1) unstable; urgency=low
+
+  * Initial package release (Closes: #954956)
+
+ -- Valentin Vidic <vvidic@debian.org>  Fri, 10 Apr 2020 08:37:52 +0000
